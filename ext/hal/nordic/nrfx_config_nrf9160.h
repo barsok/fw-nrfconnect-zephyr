@@ -140,6 +140,23 @@
 #define NRF_TIMER2                     ((NRF_TIMER_Type*) TIMER_2_BASE_ADDRESS)
 #endif
 
+#ifdef PWM_0_BASE_ADDRESS
+#define NRF_PWM0                       ((NRF_PWM_Type*) PWM_0_BASE_ADDRESS)
+#endif
+
+#ifdef PWM_1_BASE_ADDRESS
+#define NRF_PWM1                       ((NRF_PWM_Type*) PWM_1_BASE_ADDRESS)
+#endif
+
+#ifdef PWM_2_BASE_ADDRESS
+#define NRF_PWM2                       ((NRF_PWM_Type*) PWM_2_BASE_ADDRESS)
+#endif
+
+#ifdef PWM_3_BASE_ADDRESS
+#define NRF_PWM3                       ((NRF_PWM_Type*) PWM_3_BASE_ADDRESS)
+#endif
+
+
 // <<< Use Configuration Wizard in Context Menu >>>\n
 
 // <h> nRF_Drivers

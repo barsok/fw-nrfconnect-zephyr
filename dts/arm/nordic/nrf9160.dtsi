@@ -59,6 +59,10 @@
 		spi-2 = &spi2;
 		spi-3 = &spi3;
 		wdt-0 = &wdt;
+		pwm-0 = &pwm0;
+		pwm-1 = &pwm1;
+		pwm-2 = &pwm2;
+		pwm-3 = &pwm3;
 		timer-0 = &timer0;
 		timer-1 = &timer1;
 		timer-2 = &timer2;
@@ -211,6 +215,38 @@
 			interrupts = <11 1>;
 			status = "disabled";
 			label = "SPI_3";
+		};
+
+		pwm0: pwm@50021000 {
+			compatible = "nordic,nrf-pwm";
+			reg = <0x50021000 0x1000>;
+			interrupts = <33 1>;
+			status = "disabled";
+			label = "PWM_0";
+		};
+
+		pwm1: pwm@50022000 {
+			compatible = "nordic,nrf-pwm";
+			reg = <0x50022000 0x1000>;
+			interrupts = <34 1>;
+			status = "disabled";
+			label = "PWM_1";
+		};
+
+		pwm2: pwm@50023000 {
+			compatible = "nordic,nrf-pwm";
+			reg = <0x50023000 0x1000>;
+			interrupts = <35 1>;
+			status = "disabled";
+			label = "PWM_2";
+		};
+
+		pwm3: pwm@50024000 {
+			compatible = "nordic,nrf-pwm";
+			reg = <0x50024000 0x1000>;
+			interrupts = <36 1>;
+			status = "disabled";
+			label = "PWM_3";
 		};
 
 		rtc1: rtc@50015000 {
